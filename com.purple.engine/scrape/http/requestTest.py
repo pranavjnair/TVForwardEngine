@@ -12,6 +12,7 @@ session.headers.update(
 )
 
 url = 'https://variety.com/v/tv/'
+page_url = 'https://variety.com/v/tv/page/2/'
 
 try:
     web_page = session.get(url)
