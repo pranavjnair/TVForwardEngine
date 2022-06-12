@@ -47,7 +47,5 @@ try:
     variety_data = pd.DataFrame(news_list, columns=['Title', 'Link', 'Date'])
     # print(variety_data)
 
-
-
 except Exception as e:
     print(e.__str__())
