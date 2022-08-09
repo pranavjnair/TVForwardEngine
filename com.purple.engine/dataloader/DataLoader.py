@@ -2,6 +2,7 @@ import psycopg2
 import psycopg2.extras as psql_extras
 import pandas as pd
 
+
 def insert_data(
         query: str,
         conn: psycopg2.extensions.connection,
@@ -25,6 +26,6 @@ def insert_data(
     else:
         conn.commit()
 
+
 if __name__ == "__main__":
     connection = conn = psycopg2.connect(dbname="local_tvforward", user="postgres", password="secret")
-
