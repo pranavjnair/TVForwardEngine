@@ -44,8 +44,11 @@ def run_variety_scraper():
 
                 news_list.append([title, link, date])
 
-        variety_data = pd.DataFrame(news_list, columns=['Title', 'Link', 'Date'])
+        variety_data = pd.DataFrame(news_list, columns=['title', 'link', 'date'])
+        print(variety_data.get('date'))
         return variety_data
 
     except Exception as e:
         print(e.__str__())
+
+run_variety_scraper()
